@@ -1,3 +1,4 @@
+
 # Write a function in this file called nine_lines that uses the function three_lines (provided below) to print a total of nine lines.
 def new_line():
     print('.')
