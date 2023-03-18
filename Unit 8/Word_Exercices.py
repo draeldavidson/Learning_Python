@@ -62,7 +62,6 @@ def avoids(word,string):
 
 
 
-
 # Write a function named uses_only that takes a word and a string of letters, and that returns True if the word contains only letters in the list.
 
 def uses_only(word,uses):
@@ -93,18 +92,22 @@ def is_abecedarian(word):
 # is_abecedarian('aabcd')
 
 
-def print_all(txt): 
+def print_all(txt):
+    # Modify your program to prompt the user to enter a string of forbidden letters 
+    
+    print('enter a string')
+    string = input() 
     for line in txt:
         word = line.strip()
-        print_over_20(word)
+        # print_over_20(word)
         # has_no_e(word)
-        # avoids(word,'eario')
+        avoids(word,string)
         # uses_only(word,'acefhlo')
         # uses_all(word,'aeiouy')
         # is_abecedarian(word)
         
 
-# print_all(fin)
+print_all(fin)
 
 
 
